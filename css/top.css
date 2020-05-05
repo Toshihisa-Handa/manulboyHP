@@ -1,0 +1,104 @@
+/* CSS共通 */
+
+* {
+  box-sizing: border-box;
+  /* 事前に入れておくとpaddingのサイズがboxの指定に含まれるようになる */
+}
+
+html{
+  font-size: 62.5%;
+  /* これで1rem=10pxに */
+}
+
+ul{
+  list-style: none;
+  
+}
+
+a{
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+html{
+  margin-right: 0;
+  padding:0;
+}
+
+html, body {
+  /* position: absolute; */
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url('../img/guitar.jpg') no-repeat center center;
+  background-position: 50% 10%;
+  background-size: cover;
+  font-family:'Patua One', cursive, sans-serif;
+  }
+
+
+  /* メイン */
+  .title-wrapper{
+    padding-top: 20%;
+    padding-left:5%;
+  }
+
+
+
+  .title{
+    text-align: center;
+    height: 7rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color:rgb(243, 239, 231);
+  }
+
+  @media (max-width: 1350px) {
+    
+    .title-wrapper{
+      padding-top: 15%;
+    }
+    .title-area{
+      text-align: center;
+    }
+
+
+    .title{      
+      color:rgb(243, 239, 231);
+      font-size: 2.8rem;
+
+    }
+    }
+
+    @media (max-width: 970px) {    
+      .title-area{
+        padding-top:10%;
+      }
+      }
+
+    @media (max-width: 720px) {
+      .title{      
+        font-size: 2.3rem; 
+      }
+
+      }
+
+    @media (max-width: 450px) {
+      .title{      
+        font-size: 1.8rem; 
+      }
+
+      }
+
+    @media (max-width: 420px) {
+      .title{      
+        font-size: 1.2rem; 
+      }
+
+      }
+
+
+
+
+
+   

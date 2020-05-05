@@ -1,0 +1,12 @@
+
+/* スマホ向け */
+      @media (max-width: 670px) {
+        .overlay nav {
+        font-size: 30px;
+        }
+        }
+        @media (max-width: 550px) {
+        .overlay nav {
+        font-size: 20px;
+        }
+        }

@@ -1,0 +1,671 @@
+/* CSS共通 */
+
+* {
+  box-sizing: border-box;
+  /* 事前に入れておくとpaddingのサイズがboxの指定に含まれるようになる */
+}
+
+html{
+  font-size: 62.5%;
+  /* これで1rem=10pxに */
+}
+
+ul{
+  list-style: none;
+  
+}
+
+a{
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+html, body {
+  /* position: absolute; */
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url('../img/2cat.jpg') no-repeat center center;
+  /* background-position: 50% 10%; */
+  background-size: cover;
+  object-fit: cover;
+  font-family:'Patua One', cursive, sans-serif;
+  }
+
+
+/* 
+ーーーーーーーーーーーーーーーーーーーー
+アクセスここから
+ーーーーーーーーーーーーーーーーーーーー */
+
+.right-container{
+  width: 85%;
+  margin:auto;
+}
+
+.access-area{
+  padding-top: 21%;
+
+}
+
+.access-box{
+  position: relative;
+}
+
+.access-wrapper .title{
+  position: absolute;
+  left:-30px;
+  font-size: 3.6rem;
+  font-weight: bold;
+  z-index: 18;
+}
+
+.access-wrapper .clear{
+  opacity: 0;
+}
+
+.access-wrapper .times{
+  margin-top: 100px;
+}
+
+.access-wrapper h3{
+  font-family: din-2014, sans-serif;
+  font-size: 3rem;
+  color: #000005;
+}
+
+.access-time{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size:2rem;
+  line-height: 120%;
+  color: #000005;
+}
+
+.access-timeLine{
+  margin-top: 12px;
+  line-height: 35px;
+  font-size: 2rem;
+  color: #000005;
+}
+
+.icons{
+  width: 300px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  
+}
+
+.icons .fa{
+  margin-right:10px ;
+}
+.icons a{
+  color: #000005;
+}
+
+.fa-twitter{
+  color: aqua;
+}
+
+.fa-instagram{
+  color: rgb(255, 0, 217);
+}
+
+
+.access{
+  margin-top: 70px;
+  border: 1px solid #CCC;
+
+}
+
+.access h2{
+  padding:32px 0 32px 73px;
+  font-size: 2rem;
+  letter-spacing: 2.5px;
+}
+
+.access .adress{
+  padding-left: 73px;
+  margin-bottom: 32px;
+  font-size:1.6rem;
+  color: #000;
+} 
+
+.map{
+  position: absolute;
+  top:10px;
+  right: -30px;
+}
+
+iframe{
+  width: 550px;
+  height: 490px;
+  /* filter:sepia(40%);-webkit-filter:sepia(40%) */
+  filter:grayscale(100%);-webkit-filter:grayscale(100%);
+ 
+}
+
+/* アクセスエリアここまでーーーーー */
+
+@media(max-width:1400px){
+
+
+  iframe{
+    width: 440px;
+    height: 392px;
+    
+  }
+
+  .access-box{
+    position: relative;
+    right:4%
+  }
+
+}
+
+@media(max-width:1250px){
+  .map{
+    right: -10%;
+  }
+.access-wrapper .title{  
+  font-size: 2.9rem;  
+}
+.access-wrapper h3{  
+  font-size: 2.4rem;
+}
+
+}
+
+
+@media(max-width:1100px){
+  .map{
+    top:35%;
+    right: -10%;
+  }
+
+  iframe{
+    width: 353px;
+    height: 314px;
+    
+  }
+
+}
+
+
+/* @media(max-width:950px){ */
+  
+/*  
+ .header-title{
+  font-size: 3rem;
+}
+
+
+.access-wrapper h3{
+  font-size: 2.4rem;
+  color: #000005;
+}
+
+.access-time{
+  font-size:1.8rem;
+  color: #000005;
+}
+
+.access-timeLine{
+  font-size: 1.8rem;
+  color: #000005;
+}
+
+.icons{
+  font-size: 1.8rem;
+}
+
+.icons a{
+  color: #000005;
+}
+
+
+.access h2{
+  padding:32px 0 32px 73px;
+  font-size: 1.8rem;
+  letter-spacing: 2.5px;
+}
+
+.access .adress{
+  padding-left: 73px;
+  margin-bottom: 32px;
+  font-size:1.6rem;
+  color: #000;
+} 
+} */
+
+
+@media(max-width:900px){
+  .map{
+    top:55%;
+  }
+
+  iframe{
+    width: 282px;
+    height: 252px;
+    
+  }
+
+}
+
+@media(max-width:700px){
+  .map{
+    top:55%;
+    right: -10%;
+  }
+
+  iframe{
+    width: 225px;
+    height: 252px;
+    
+  }
+
+}
+
+@media(max-width:635px){
+  .map{
+    top:-5%;
+    right: -10%;
+  }
+
+  iframe{
+    width: 225px;
+    height: 252px;
+    
+  }
+
+}
+
+
+/* ９５０から縦書きにする記述 */
+
+@media(max-width:950px){
+
+  
+.right-container{
+  width: 85%;
+  margin:auto;
+}
+
+.access-area{
+  padding-top: 21%;
+
+}
+
+.access-box{
+  position: relative;
+}
+
+.access-wrapper .title{
+  position: absolute;
+  left:50%;
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: antiquewhite;
+  z-index: 18;
+}
+
+.access-wrapper .clear{
+  opacity: 0;
+}
+
+.access-wrapper .times{
+  margin-top: 100px;
+}
+
+.access-wrapper h3{
+  margin-left: 41%;
+  font-family: din-2014, sans-serif;
+  font-size: 3rem;
+  color: rgb(228, 216, 202);
+}
+
+.access-time{
+  margin-top: 40px;
+  margin-left: 58%;
+  font-weight: bold;
+  font-size:2rem;
+  line-height: 120%;
+  color: rgb(228, 216, 202);
+}
+
+.access-timeLine{
+  margin-top: 12px;
+  margin-left: 40%;
+  line-height: 35px;
+  font-size: 2rem;
+  color: rgb(228, 216, 202);
+}
+
+.icons{
+  width: 100%;
+  margin-top: 55px;
+  margin-left:12%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  
+}
+
+.icons .fa{
+  margin-right:10px ;
+}
+.icons a{
+  color: #000005;
+}
+
+.fa-twitter{
+  color: aqua;
+}
+
+.fa-instagram{
+  color: rgb(255, 0, 217);
+}
+
+
+.access{
+  display:none;
+  /* margin-top: 40px;
+  margin-left: 25%;
+  border: 1px solid #CCC;
+  background-color: rgba(245, 245, 220, 0.5); */
+
+}
+/* 
+.access h2{
+  padding:32px 0 32px 73px;
+  font-size: 2rem;
+  letter-spacing: 2.5px;
+}
+
+.access .adress{
+  margin-bottom: 32px;
+  font-size:1.6rem;
+  color: #000;
+} */
+
+.map{
+  display: none;
+  /* position: absolute;
+  top:120%;
+  right: -30px; */
+} 
+
+/* iframe{
+  width: 550px;
+  height: 490px;
+ 
+} */
+
+  }
+
+
+@media(max-width:720px){
+
+  
+  .access-area{
+    padding-top: 21%;
+  
+  }
+  
+  
+  .access-wrapper .title{
+    position: absolute;
+    left:45%;
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: antiquewhite;
+    z-index: 18;
+  }
+  
+  .access-wrapper .clear{
+    opacity: 0;
+  }
+  
+  .access-wrapper .times{
+    margin-top: 100px;
+  }
+  
+  .access-wrapper h3{
+    margin-left: 37%;
+    font-family: din-2014, sans-serif;
+    font-size: 2.4rem;
+    color: rgb(228, 216, 202);
+  }
+  
+  .access-time{
+    margin-top: 40px;
+    margin-left: 50%;
+    font-weight: bold;
+    font-size:2rem;
+    line-height: 120%;
+    color: rgb(228, 216, 202);
+  }
+  
+  .access-timeLine{
+    margin-top: 45px;
+    margin-left: 32%;
+    line-height: 35px;
+    font-size: 1.6rem;
+    color: rgb(228, 216, 202);
+  }
+  
+  .icons{
+    width: 100%;
+    margin-top: 50px;
+    margin-left:8%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    
+  }
+  
+
+  
+    }
+
+@media(max-width:600px){
+
+  
+  .access-area{
+    padding-top: 21%;
+  
+  }
+  
+  
+  .access-wrapper .title{
+    position: absolute;
+    left:39%;
+    font-size: 2.4rem;
+  }
+  
+  .access-wrapper .times{
+    margin-top: 80px;
+  }
+  
+  .access-wrapper h3{
+    margin-left: 28%;
+    font-family: din-2014, sans-serif;
+    font-size: 2.2rem;
+    color: rgb(228, 216, 202);
+  }
+  
+  .access-time{
+    margin-top: 40px;
+    margin-left: 45%;
+    font-weight: bold;
+    font-size:1.8rem;
+    line-height: 120%;
+    color: rgb(228, 216, 202);
+  }
+  
+  .access-timeLine{
+    margin-top: 45px;
+    margin-left: 22%;
+    font-size: 1.6rem;
+    color: rgb(228, 216, 202);
+  }
+  
+  .icons{
+    width: 100%;
+    margin-top: 90px;
+    margin-left:3%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    
+  }  
+    }
+
+
+@media(max-width:560px){
+
+  
+  .access-timeLine{
+    margin-top: 45px;
+    font-size: 1.6rem;
+    color: rgb(228, 216, 202);
+  }
+  
+    
+  }  
+
+
+
+
+
+
+
+@media(max-width:480px){
+
+  .access-time{
+    margin-top: 90px;
+    margin-left: 45%;
+    font-weight: bold;
+    font-size:1.8rem;
+    line-height: 120%;
+    color: rgb(228, 216, 202);
+  }
+  
+  .access-timeLine{
+    margin-top: 35px;
+    margin-left: 2;
+    font-size: 1.4rem;
+    color: rgb(228, 216, 202);
+  }
+  .icons{
+    width: 100%;
+    margin-top: 130px;
+    margin-left:3%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    
+  
+    
+  }  
+
+
+
+@media(max-width:420px){
+
+  .access-wrapper .title{
+    top:5%;
+  }
+  
+.access-wrapper h3{
+  margin-left: 20%;
+}
+
+  
+  .access-time{
+    margin-top: 90px;
+    margin-left: 45%;
+    font-weight: bold;
+    font-size:1.8rem;
+    line-height: 120%;
+    color: rgb(228, 216, 202);
+  }
+  
+  .access-timeLine{
+    margin-top: 35px;
+    font-size: 1.4rem;
+    color: rgb(228, 216, 202);
+  }
+  .icons{
+    width: 100%;
+    margin-top: 130px;
+    margin-left:3%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    
+  
+    
+  }  
+    
+}
+
+
+@media(max-width:360px){
+
+
+  .access-wrapper .title{
+    position: absolute;
+    left:39%;
+    font-size: 2rem;
+  }
+
+  .access-wrapper h3{
+    margin-left: 50%;
+    font-size: 2rem;
+    color: rgb(228, 216, 202);
+  }
+  
+
+  .access-wrapper .title{
+    top:5%;
+  }
+  
+.access-wrapper h3{
+  margin-left: 10%;
+}
+
+  
+.access-time{
+  margin-top: 40px;
+  margin-left: 45%;
+  font-size:1.6rem;
+}
+  
+  .access-timeLine{
+    margin-top: 35px;
+    margin-left: 10%;
+    font-size: 1.4rem;
+    color: rgb(228, 216, 202);
+  }
+  .icons{
+    width: 100%;
+    margin-top: 40px;
+    margin-left:3%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    
+  
+    
+  }  
+    
+}
+
+
+
+}

@@ -1,0 +1,180 @@
+/* CSS共通 */
+
+* {
+  box-sizing: border-box;
+  /* 事前に入れておくとpaddingのサイズがboxの指定に含まれるようになる */
+}
+
+html{
+  font-size: 62.5%;
+  /* これで1rem=10pxに */
+}
+
+ul{
+  list-style: none;
+  
+}
+
+a{
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+html {
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url('../img/3main.jpg') no-repeat center center;
+  background-position: 50% 10%;
+  background-size: cover;
+  font-family:'Patua One', cursive, sans-serif;
+  }
+
+
+/* トップエリアーーーーー */
+.top-wrapper{
+  margin:8% 0 0 10%;
+}
+
+
+.top-area .title{
+  font-size: 4rem;
+  color:rgb(213, 219, 235);
+}
+
+/* トップエリアここまでーーーーー */
+
+/* メインエリアーーーーー */
+
+.main-wrapper{
+margin-top:150px;
+}
+
+.main-container{
+  width:100%;
+  margin:auto;
+}
+
+/* メインイメージ */
+.images-test{
+  width: 100%;
+}
+
+.img-box{
+  width:50%;
+  padding:0 50px 0 50px;
+  overflow: hidden;
+
+}
+
+
+
+.images-test img{
+  width:100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.images-test img:hover{
+  -webkit-transform: scale(1.3);
+   transform: scale(1.3);
+}
+
+
+/* SNSエリア */
+
+.sns-wrapper{
+  margin-top: 70px;
+}
+.sns-container{
+  width: 100%;
+}
+.sns-area{
+text-align: center;
+
+}
+.sns-area a{
+  font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  color: rgb(241, 230, 11);
+}
+
+.sns-area a:before{
+	content: "";
+	position: absolute;
+	 left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 3px;
+	background: rgb(136, 138, 139);
+	transform: scale(0, 1);
+	transform-origin: left;
+	transition: 0.4s;
+}
+.sns-area a:hover:before {
+	  transform: scale(1);
+}
+
+
+
+.snsBox{
+  width: 12%;
+  margin:20px auto;
+  text-align: center;
+}
+
+.fab{
+  font-size: 2.2rem;
+  padding:0 10px 10px 0;
+}
+.btn{
+  /* display: inline-block; */
+  font-size: 2.2rem;
+  position: relative;
+ }
+
+ .box{
+   border-radius: 5%;
+   width:200px;
+   height: 35px;
+   line-height: 35px;
+ }
+ .box:hover{
+   opacity: 0.7;
+ }
+ .instaBox{   
+   background-color:#e350be;    
+ }
+ .twitterBox{
+   margin-top: 10px;
+   background-color:#3890cb; ;
+ }
+ 
+
+
+
+
+
+
+
+
+ 
+
+  /* スマホ向けレイアウト */
+  @media all and (max-width: 665px) {
+
+    .main-area{
+      margin-left: 10%;
+    }
+
+    .img-box{
+      width:50%;
+      padding:0 20px 0 20p
+
+    
+
+  }
+  }

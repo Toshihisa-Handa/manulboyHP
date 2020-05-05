@@ -1,0 +1,52 @@
+/* CSS共通 */
+
+* {
+  box-sizing: border-box;
+  /* 事前に入れておくとpaddingのサイズがboxの指定に含まれるようになる */
+}
+
+html{
+  font-size: 62.5%;
+  /* これで1rem=10pxに */
+  
+}
+
+body{
+  font-family:'Patua One', cursive, sans-serif;
+
+}
+ul{
+  list-style: none;
+  
+}
+
+a{
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+/* ーーーーーーーーーーーーCSS共通ーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+
+.main-container{
+  width: 100%;
+  height: 1000px;
+}
+
+.title-wrapper{
+  position: absolute;
+  top:30%;
+  left:10%;
+}
+
+.title{
+  font-size: 3rem;
+  font-weight: bold;
+  color:rgb(197, 161, 63)
+}
+
+.sub{
+  margin-top: 20px;
+}

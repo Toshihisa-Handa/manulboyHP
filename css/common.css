@@ -1,0 +1,40 @@
+/* CSS共通 */
+
+* {
+  box-sizing: border-box;
+  /* 事前に入れておくとpaddingのサイズがboxの指定に含まれるようになる */
+}
+
+html{
+  font-size: 62.5%;
+  /* これで1rem=10pxに */
+}
+
+ul{
+  list-style: none;
+  
+}
+
+a{
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+html{
+  margin-right: 0;
+  padding:0;
+}
+
+html, body {
+  /* position: absolute; */
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url('../img/3main.jpg') no-repeat center center;
+  background-position: 50% 10%;
+  background-size: cover;
+  font-family:'Patua One', cursive, sans-serif;
+  }
+
+
+/* ーーーーーーーーーーーーCSS共通ーーーーーーーーーーーーーーーーーーーーーーーーーー */
